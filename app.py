@@ -128,7 +128,7 @@ def parse_m3u_fast(m3u_text):
     return channels
 
 # --- ROTAS DA APLICAÇÃO ---
-
+app = Flask(__name__, static_folder='.', static_url_path='')
 @app.route('/')
 def index():
     """Entrega a interface principal (index.html)."""
